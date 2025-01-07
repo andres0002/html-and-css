@@ -1,0 +1,14 @@
+/* Por elemento */
+li {
+    color: aqua;
+}
+
+/* Por clase */
+.ingrediente-faltante {
+    color: red;
+}
+
+/* Por Id */
+#ingrediente-secreto {
+    color: blue;
+}
