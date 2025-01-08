@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+/* R (0 - 255) G (0 - 255) B (0 - 255) */
+.box-rgb {
+    width: 100px;
+    height: 100px;
+    /* background: rgb(255 (cuanto rojo), 0 (cuanto verde), 0 (cuanto azul)); */
+    background: rgb(255, 0, 0);
+    /* background: rgba(255 (cuanto rojo), 0 (cuanto verde), 0 (cuanto azul), 0 (cuanta opacidad de (0 a  1) o de (0% a 100%)))); */
+    /* background: rgba(255, 0, 0, 0.5); */
+    margin: 10px;
+}
+
+/* Hexadecimal */
+/* #00 (rojo (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f)) 00 (verde (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f)) 00 (azul (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f)) */
+.box-hex {
+    width: 100px;
+    height: 100px;
+    /* 
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f
+    */
+    /* background: #ff (rojo) 00 (verde) 00 (azul); */
+    background: #ff0000;
+    /* 
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f
+    */
+    /* background: #ff (rojo) 00 (verde) 00 (azul) 00 (opacidad); */
+    /* background: #ff000000; */
+    margin: 10px;
+}
+
+/* hsl(0 (angulo de color), 100% (saturación), 100% (Iluminación)) */
+.box-hsl {
+    width: 100px;
+    height: 100px;
+    /* background: hsl(0 (0 - 300), 20% (0 - 100%), 20% (0 - 100%)); */
+    background: hsl(0, 20%, 20%);
+    /* background: hsl(0 (0 - 300), 20% (0 - 100%), 20% (0 - 100%), 0 (opacidad de (0 a 1) o de (0% a 100%))); */
+    /* background: hsla(0, 20%, 20%, 0); */
+    margin: 10px;
+}
