@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #f00;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    /* background-image: url("https://imgs.search.brave.com/eeN2Z53Fd7YqfFIvQRXJwI8wZnRd9gNUYIZ4bbPfVnY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/MS8xNC8yMy8xMi9u/YXR1cmUtMzA4Mjgz/Ml82NDAuanBn");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #00f5; */
+    background: url("https://imgs.search.brave.com/eeN2Z53Fd7YqfFIvQRXJwI8wZnRd9gNUYIZ4bbPfVnY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/MS8xNC8yMy8xMi9u/YXR1cmUtMzA4Mjgz/Ml82NDAuanBn") top / cover fixed #00f5;
+    margin: 0;
+}
+
+.opaco {
+    width: 100%;
+    height: 100%;
+    background-color: #0004;
+}
+
+h2 {
+    padding: 50px;
+    text-align: center;
+}

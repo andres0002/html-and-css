@@ -1,0 +1,65 @@
+html {
+    font-size: 16px;
+}
+
+div {
+    background: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid #999;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+span {
+    color: #999;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+p {
+    color: #555;
+}
+
+ul {
+    font-size: 16px;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 2rem;
+}
+
+.cm {
+    font-size: 2cm;
+}
+
+.mm {
+    font-size: 2mm;
+}
+
+.vw {
+    font-size: 2vw;
+}
+
+.vh {
+    font-size: 2vh;
+}
+
+.vmin {
+    font-size: 2vmin;
+}
+
+.vmax {
+    font-size: 2vmax;
+}
+
+.vmin {
+    font-size: 2vmin;
+}
