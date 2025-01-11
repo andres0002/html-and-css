@@ -15,6 +15,7 @@ body {
 }
 
 .box-new {
+    /* por default box-sizing tiene el valor content-box */
     box-sizing: border-box;
     padding: 25px;
     border: 10px solid black;

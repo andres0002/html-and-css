@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    background-color: #444;
+    color: #ddd;
+}
+
+table {
+    width: 100%;
+    border-spacing: 5px;
+    box-shadow: 0 0 15px 0 #000;
+    margin: auto;
+}
+
+/* Encabezados */
+th {
+    border-bottom: 1px solid #f00;
+    padding: 5px 10px;
+}
+/* Filas */
+tr {
+    background-color: #666;
+    padding: 5px 10px;
+}
+/* Datos */
+td {
+    border-bottom: 1px solid #00f;
+    text-align: center;
+    color: #bbb;
+    padding: 5px 10px;
+}
+
+.col {
+    width: 80%;
+    background-color: #f00;
+    margin: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row {
+    width: 80%;
+    background-color: #666;
+    margin: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data {
+    width: 80%;
+    background-color: #00f;
+    margin: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

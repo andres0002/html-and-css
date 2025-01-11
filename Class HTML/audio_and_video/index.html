@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- (controls) -> los controles del video y audio. -->
+    <!-- (autoplay - muted) -> se usan en conjunto tanto para el video como para el audio. -->
+    <!-- (loop) -> para poner el video o audio en ciclo infinito. -->
+    <h1>Audio y Video</h1>
+    <h2>Video</h2>
+    <video src="dont-cry.mp4" controls loop autoplay muted poster="img.png">
+        <!-- (track) -> para los subtitulos. -->
+        <track src="captions.vtt" default kind="subtitles" srclang="en" label="English">
+        Tu navegador mno soporta el video.
+    </video>
+    <h2>Audio</h2>
+    <audio src="dont-cry.mp3" controls loop autoplay muted>
+        Tu navegador mno soporta el audio.
+    </audio>
+</body>
+
+</html>
