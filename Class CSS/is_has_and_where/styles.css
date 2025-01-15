@@ -1,0 +1,22 @@
+/* Seleción de elementos basico. */
+section .elem-1,
+section .elem-2,
+section .elem-3 {
+    color: #22f;
+}
+/* Para agrupar nos evitamos poner section por cada elemento solo ponemos section y agrupamos lo elementos en el (is(elems)). */
+section :is(.elem-4, .elem-5, .elem-6) {
+    color: #99f;
+}
+/* Es similar al is solo que el nivel de especifidad es menor que la de el is. */
+section :where(.elem-7, .elem-8, .elem-9) {
+    color: #9f9
+}
+/* (:has) es una pseudoclase que se le da al elemento padre, y se utiliza como una especia de condicional para aplicar determinados estilos a un elemento padre, el cual consiste en validar si dicho elemto padre en este caso section tiene un elemento en este caso (.elem-10) aplique determinados estilos. */
+section:has(.elem-10) {
+    background-color: #888;
+}
+/* En caso de que a un ul le prosiga un div modificamos los estilos del ul en este caso. */
+ul:has(+div) {
+    background-color: #aaa;
+}

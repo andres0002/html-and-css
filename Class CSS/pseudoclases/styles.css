@@ -1,0 +1,68 @@
+h1 {
+    color: #f22;
+    font-family: sans-serif;
+    margin: 30px;
+}
+/* Cuando se pasa el mause por encima del elemento html en este caso h1. */
+h1:hover {
+    color: #22f;
+    background-color: #999;
+}
+/* Cuando se da clic en el elemento html en este caso h1. */
+h1:active {
+    color: #fff;
+    background-color: #999;
+}
+/* Seleciona el primer elemento. */
+li:first-child {
+    color: #00f;
+}
+/* Seleciona el elemento deacuerdo a su indice. */
+li:nth-child(2) {
+    color: #f00;
+}
+/* Seleciona el tercer elemento de type (li) en este caso. */
+li:nth-of-type(3) {
+    color: #0f0;
+}
+/* Para selecionar un li si y un li no. */
+li:nth-child(2n) {
+    color: #f00;
+}
+/* Seleciona el ultimo elemento. */
+li:last-child {
+    color: #0f0;
+}
+/* Aplica los estilos a todos los li menos a los que tienen la clase (.excluir) en este caso. */
+.list li:not(.excluir) {
+    color: #0f0;
+}
+/* Para selecionar solo elementos vacios.. */
+div:empty {
+    background-color: #0f0;
+    padding: 30px;
+}
+/* Para selecionar solo elementos de type checkbox */
+input[type="checkbox"] {
+    margin: 30px;
+}
+/* Para selecionar solo elementos de type checkbox que esten selecionados. */
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+/* Selecionando enlaces no visitados. */
+a:link {
+    color: #f22;
+}
+/* Selecionando enlaces visitados. */
+a:visited {
+    color: #2f2;
+}
+/* Selecionando inputs validos */
+input:valid {
+    color: #0f0;
+}
+/* Selecionando inputs invalidos */
+input:invalid {
+    color: #f00;
+}

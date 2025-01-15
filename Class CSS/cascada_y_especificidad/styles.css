@@ -1,0 +1,21 @@
+/* ID */
+#title {
+    color: #00f;
+}
+/* CLASS */
+.title {
+    color: #0f0;
+}
+/* elemento */
+h1 {
+    color: #f00;
+}
+
+/* 
+    1. !important.
+    2. Atributo (style).
+    3. La etiqueta (style).
+    4. El (ID (#)).
+    5. La clase (class (.)).
+    6. El elememto html por ejemplo un (h1).
+*/

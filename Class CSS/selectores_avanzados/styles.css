@@ -1,0 +1,40 @@
+/* Sin cumple con un selector de atributo que aplique los styles en este caso se hace con los corchetes ([]). */
+img[src="../imgs/paisaje.jpg"] {
+    width: 100%;
+}
+
+/* Que de los estilos a todo lo que termine en jpg */
+img[src$="jpg"] {
+    width: 100%;
+    box-shadow: 0 0 15px 0 #00f;
+}
+
+/* Que de los estilos a todo lo que empieza con (../imgs/) */
+img[src^="../imgs/"] {
+    width: 100%;
+}
+
+/* Selectores descendentes (que esten envueltos) */
+ul li {
+    color: #f00;
+}
+
+/* Selectores descendentes que especificamente sea un hijo directo */
+li > strong {
+    color: #0f0;
+}
+
+/* Selector adyacente (al hermano que lo procede) si p viene despues de un h1 en este caso*/
+h1 + p {
+    color: #00f;
+}
+
+/* Selectores de hermanos generales le da los estilos a los p que vengan despues de un h1 en este caso. */
+h1 ~ p {
+    color: #00f;
+}
+
+/* Para dar estilos a mas de un elemento separado por comas */
+h2, p {
+    color: #0f0;
+}

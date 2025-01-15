@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #666;
+}
+
+div {
+    padding: 20px;
+}
+/* Sirve para modificar los estilos del primer carater de un elemento. */
+h1::first-letter {
+    color: #f55;
+    font-size: 4em;
+    letter-spacing: 10px;
+}
+/* Sirve para modificar los estilos de la primera line de un elemento. */
+div::first-line {
+    color: #faa;
+    font-weight: bold;
+}
+/* Sirve para modificar el background y el color de los parte que se seleciona con el mause. */
+div::selection {
+    background-color: #f55;
+    color: #fff;
+}
+/* Sirve para cambiar un poco los estilos del placeholder. */
+input::placeholder {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    background-color: #f55;
+    padding: 10px;
+}
+/* Sirve para modificar los marcadores o viñetas. */
+li::marker {
+    color: #f55;
+}
+/* Sirve para poner elementos antes de el que se tiene y se le puede dar estilos, es como un marcador o viñeta. */
+li::before {
+    content: "Antes ";
+    color: #f66;
+}
+/* Sirve para poner elementos despues de el elemento que se tiene y se le puede dar estilos. */
+li::after {
+    content: "Despues";
+    color: #f55;
+}
