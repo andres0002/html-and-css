@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #aaa;
+}
+
+.box {
+    width: 200px;
+    /* height: 200px; */
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border: 5px solid #000;
+    /* El outline solo ocupa aspetos visuales no de espacion. */
+    /* outline-width: 10px; -> Sirve para indicar el ancho del outline. */
+    outline-width: 10px;
+    outline-color: #00f;
+    /* outline-style: solid; -> Sirve para indicar el tipo de outline tiene los mismos del border. */
+    outline-style: solid;
+    /* outline-offset: 10px; -> Sirve para indicar cuanto se va separar el outline del border. */
+    outline-offset: 10px;
+    /* outline: none; -> Sirve para sacar o quitar el outline. */
+    /* outline: none; */
+}
+
+.box:hover {
+    outline: 10px solid #0f0;
+    outline-offset: 0;
+}
+
+input {
+    margin-top: 50px;
+    margin-left: 50px;
+    border: none;
+    border-bottom: 5px solid #999;
+    padding: 6px;
+}
+
+input:focus {
+    border-color: #00f;
+    color: #00f;
+}
+
+/* Este es la mejor forma de quitar el outline, ya que de este forma visualmente no se ve pero para temas de acesibilidad si se reconoce. */
+input:focus-visible {
+    outline: none;
+}

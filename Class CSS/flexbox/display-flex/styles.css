@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.flexbox {
+    display: flex;
+    /* flex-direction: row; -> De izquierda a derecha. */
+    /* flex-direction: row-reverse; -> De forma inversa. */
+    /* flex-direction: column; -> De arriba hacia abajo. */
+    /* flex-direction: column-reverse; -> De abajo hacia arriba. */
+    flex-direction: row;
+    /* direction: ltr (left to right); -> Sirve para cambiar la direción del texto. */
+    /* direction: rtl (right to left); Sirve para cambiar la direción del texto. */
+    direction: rtl;
+}
+
+.flex-item {
+    width: 150px;
+    text-align: center;
+    background-color: #911;
+    margin: 10px;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #333;
+}

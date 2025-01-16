@@ -1,0 +1,35 @@
+body {
+    margin: 10px;
+    font-family: sans-serif;
+    background-color: #aaa;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.flex-item {
+    width: 150px;
+    background-color: #f44;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    /* order: 0; -> Este es el valor por defecto. */
+    order: 0;
+}
+
+.flex-item:first-child {
+    background-color: #f99;
+    order: 2;
+}
+
+.flex-item:last-child {
+    background-color: #911;
+    order: 1;
+}

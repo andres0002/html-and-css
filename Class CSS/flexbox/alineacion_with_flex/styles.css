@@ -1,0 +1,54 @@
+body {
+    margin: 10px;
+    font-family: sans-serif;
+    background-color: #aaa;
+}
+
+.flexbox {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* height: 100vh; */
+    border: 1px solid #000;
+    /* justify-content: start; -> Este es el valor por defecto. */
+    /* justify-content: start, end, center; -> Sirve para alinear deacuerdo al main axis (eje principal). */
+    /* justify-content: space-between; -> Sirve para poner el primer elemento al inicio, el ultimo elemento al final y los demas se ajustan entre ellos. */
+    /* justify-content: space-around; -> Sirve para darle la misma separación a todos los elementos. */
+    /* justify-content: space-evenly; Sirve para darle la misma separación a todos los elemtnos pero de una forma mas equitativa. */
+    justify-content: space-evenly;
+    height: 100vh;
+    /* align-items: stretch; -> Este es el valor por defecto e indica que se estire deacuerdo al cross axis. */
+    /* align-items: start; -> Sirve para que el contenido de los hijos solo tomen el espacio necesario en el eje del cross axis para lo que contienen y lo posiciona al principio del cross axis. */
+    /* align-items: end; -> Sirve para que el contenido de los hijos solo tomen el espacio necesario en el eje del cross axis para lo que contienen y lo posiciona al final del cross axis. */
+    /* align-items: center; -> Sirve para que el contenido de los hijos solo tomen el espacio necesario en el eje del cross axis para lo que contienen y lo posiciona al centro del cross axis. */
+    /* align-items: baseline; -> Seirve para alinear segun la base del texto deacuerdo al cross axis y al inicio del cross axis. */
+    /* align-items -> Sirve cuando se tiene una sola linea. */
+    align-items: baseline;
+    /* align-content -> Sirve para mas de una linea. */
+    /* align-content: normal; -> Este es el valor por defecto. */
+    /* align-content: start, end, center; -> Sirve para alinear deacuerdo al cross axis (eje cruzado). */
+    /* align-content: space-between; -> Sirve para poner el primer elemento al inicio, el ultimo elemento al final y los demas se ajustan entre ellos en el cross axis. */
+    /* align-content: space-around; -> Sirve para darle la misma separación a todos los elementos en el cross axis. */
+    /* align-content: space-evenly; Sirve para darle la misma separación a todos los elemtnos pero de una forma mas equitativa en el cross axis. */
+    align-content: space-evenly;
+}
+
+.flex-item {
+    width: 150px;
+    background-color: #f44;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    /* height: 50px; */
+}
+
+.flex-item:first-child {
+    background-color: #f99;
+}
+
+.flex-item:last-child {
+    background-color: #911;
+}

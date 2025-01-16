@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #555;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    /* overflow: visible; -> este valor (visible (por defecto)) siver para mostrar el contenido que se sale del contenedor. */
+    /* overflow: hidden; -> este valor (hidden) sirve para ocultar lo que se salga del contenedor. */
+    /* overflow: scroll; -> sirve para aplicar el scroll al contenedor si el elemento se sale de los bordes se aplica el scroll x and y. */
+    /* overflow: auto; -> Sirve para que se habilite el scroll cuando el contenido se sale del contenedor. */
+    /* overflow-x: auto; para el vertice x */
+    /* overflow-y: auto; para el vertice y */
+    overflow: auto;
+}

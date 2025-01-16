@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* object-fit: fill; -> la propiedad por defecto, sirve para que se adapta y rellena el contenido. */
+    /* object-fit: contain; -> Sirve para hacer que la imagen dentre por lo menos una ves con la resolución que definimos, que alguna de las dos dimenciones este al 100% ya sea el width o el height.  */
+    /* object-fit: cover; -> Sirve para adaptarce. */
+    /* object-fit: none; -> Sirve para que mantega sus resoluciones originales. */
+    /* object-fit: scale-down; -> Sirve para quedarce con la resolución mas chica, se de contain o none. */
+    object-fit: scale-down;
+    /* object-position: top; -> Sirve para que nos muestre (se enfoque) la parte de arriba. */
+    /* object-position: right; -> Sirve para que nos muestre (se enfoque) la parte de la derecha. */
+    /* object-position: bottom; -> Sirve para que nos muestre (se enfoque) la parte de abajo. */
+    /* object-position: left; -> Sirve para que nos muestre (se enfoque) la parte de la derecha. */
+    /* object-position: center; -> Sirve para que nos muestre (se enfoque) la parte de el centro. */
+    /* object-position: 50px (lleft) 50px (top); -> Sirve para mover un poco de el lado derecho como de arriba. */
+    /* object-position: center; */
+}

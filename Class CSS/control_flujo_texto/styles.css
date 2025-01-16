@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #aaa;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+    /* (white-space: normal (es el valor por defecto);) -> define como se comportan los espacios en blanco y tambien los saltos de linea. */
+    /* (white-space: nowrap;) -> sirve para indicar que no va haber saltos de linea. */
+    /* (white-space: pre;) -> sirve para poner los saltos de linea talcual lo ponemos el código. */
+    /* (white-space: pre-wrap;) -> similar al normal solo que acepta lo que yo hago como el pre. */
+    /* overflow: hidden; */
+    /* white-space: pre; */
+    /* white-space: nowrap; */
+    /* (text-overflow: ellipsis;) -> Sirve para adicionar los tres puntos de continuación, aunque se requiere utilizar en conjunto con ((overflow: hidden;) and (white-space: pre; o white-space: nowrap;)) */
+    /* text-overflow: ellipsis; */
+    /* word-break: break-all; sirve para recortar palabras si no cabe en la linea. */
+    /* word-break: keep-all; -> para evitar la rutura de palabras. */
+    /* overflow-wrap: break-word; -> sirve para romper las palabras en silabas. */
+    /* overflow-wrap: anywhere; Sirve para romper las palabras largas si se desbordan. */
+    overflow-wrap: anywhere;
+    /* text-wrap: pretty; Sirve para evitar las viudas (palabras solas al inicio) y los huerfanos (palabras solas al final). */
+    text-wrap: pretty;
+}
+
+h1 {
+    /* text-wrap: balance; -> sirve para balancearme las palabras de tal forma que queden mas esteticas, para evitar palabras hurbafanas al final. */
+    text-wrap: balance;
+}
