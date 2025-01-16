@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0009;
+    font-weight: bold;
+    width: 100vw;
+    height: 100vh;
+}
+
+body:hover .box2 {
+    left: 200px;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    transition-property: background-color, color, font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+.box1:hover {
+    background-color: #a22;
+    color: #fff;
+    font-size: 30px;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    /* transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.63, .11, .25, .89);
+    transition-delay: 0s; */
+    transition: left, 1s cubic-bezier(.63, .11, .25, .89) 0s;
+    position: relative;
+    left: 0;
+}

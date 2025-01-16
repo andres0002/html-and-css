@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+dialog {
+    border: 0;
+    box-sizing: border-box;
+}
+
+.modal {
+    /* position: absolute; */
+    background-color: #0009;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.modal__content {
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.modal__title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.modal__text {
+    margin: 10px;
+    text-align: justify;
+}
+
+.modal__buttons {
+    text-align: center;
+}
+
+.modal__btn {
+    background-color: #000;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.btn--acept {
+    background-color: #46f;
+    margin: 0 10px;
+}
+
+.btn--acept:hover {
+    background-color: #0008;
+}
+
+.btn--cancel {
+    background-color: #f22;
+    margin: 0 10px;
+}
+
+.btn--cancel:hover {
+    background-color: #0008;
+}
+
+.btn--close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.btn--close-modal:hover {
+    background-color: #000a;
+}

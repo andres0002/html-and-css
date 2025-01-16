@@ -1,0 +1,28 @@
+body {
+    background-color: #777;
+    color: #fff;
+    font-family: sans-serif;
+}
+/* 1. bloque */
+.list {
+    border: 2px solid #000;
+}
+/* 3 modificador */
+.list--old {
+    opacity: 0.5;
+    background-color: #999;
+}
+/* 2. elemento */
+.list__item {
+    color: #ccc;
+    margin: 10px 0;
+    list-style: square;
+}
+/* 3 modificador */
+.item--danino {
+    color: #f00;
+}
+/* 3 modificador */
+.item--importante {
+    color: #0f0;
+}

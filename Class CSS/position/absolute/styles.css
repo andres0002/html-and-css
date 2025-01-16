@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: #999;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid #000;
+    background-color: #bbb;
+    margin: 10px;
+    position: relative;
+}
+
+.container__box {
+    width: 100px;
+    height: 100px;
+    background-color: #ca6;
+    color: #fff;
+    /* position: static; -> es el valor que trae por default el position y con este valor no estan posicionados los elementos. */
+}
+
+.box--blue {
+    background-color: #37f;
+    /* El position absolute sirve para moverse de los lados (top, right, bottom, left) del padre que tenga position relative, si ningún padre tiene position relative se mueve desde los lados (top, right, bottom, left) del elemento raiz el cual seria html. */
+    position: absolute;
+    top: 50px;
+}
+
+.box--red {
+    background-color: #e53;
+    position: relative;
+}
