@@ -10,6 +10,8 @@ body {
     border: 1px solid #000;
     justify-content: space-evenly;
     align-items: center;
+    /* gap: 10px; -> Sirve para dar la separación entre los elementos hijos del elemento con la propiedad display: flex. */
+    gap: 10px;
 }
 
 .flex-item {
@@ -19,12 +21,24 @@ body {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    margin: 10px;
+    /* margin: 10px; */
+    /* flex-grow: 0; Por defecto el valor viene en 0, y Sirve para indicar cunato del espacio disponible se puede tomar, para indicar que puede crecer o expanderce por defecto como viene en 0 no crece o se expannde. */
+    flex-grow: 1;
+    /* flex-shrink: 1 -> Por defecto es 1 y Sirve para determinar la capacidad para encojerce. */
+    flex-shrink: 1;
+    /* flex-basis: auto; -> Por defecto viene en automitico el auto es deacuerdo al width o width-min que se defina y Sirve para determinar el tamaño minimo base que va tener, nos indica que ese es el valor mas chico que puede tomar antes de encojerce en la direción del main axis. */
+    flex-basis: 150px;
+    flex: 1 1 150px;
+
 }
 
-.flex-item:first-child {
+.flex-item:nth-child(2n) {
     background-color: #f99;
 }
+
+/* .flex-item:first-child {
+    background-color: #f99;
+} */
 
 .flex-item:last-child {
     background-color: #911;
