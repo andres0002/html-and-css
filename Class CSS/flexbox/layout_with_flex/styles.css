@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #999;
+    color: #fff;
+}
+
+div, header, nav, ul, h1, h2, p, img {
+    box-sizing: border-box;
+}
+
+/* Header section */
+
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("./imgs/header-background.jpeg");
+    background-size: cover;
+    display: flex;
+}
+
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #9996;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-container {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.header__img {
+    min-width: 200px;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: 20px;
+}
+
+.header__item-container p {
+    text-wrap: pretty;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+}
+
+/* Navbar section */
+
+.nav {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px 0 #999; 
+}
+
+.nav__ul-container {
+    flex-grow: 4;
+}
+
+.nav__logo-container, .nav__ul-container  {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav__item {
+    /* display: inline-block; */
+    list-style: none;
+}
+
+.nav__link {
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.2s, outline 0.2s, outline-offset 0.2s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    background-color: #9996;
+    border-radius: 20px;
+    outline: 2px solid #9996;
+    outline-offset: -7px;
+}
+
+.link--login {
+    background-color: #999;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin-left: 6px;
+}
+
+.link--login:hover {
+    background-color: #9999;
+    outline: none;
+}
+
+.nav__logo {
+    width: 70px;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+}
+
+/* Main setion */
+
+main {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    text-wrap: pritty;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srcset and Sizes</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div>
+        <!-- <img src="./imgs/rostro.jpg" alt="rostro"> -->
+        <!-- <img src="./imgs/rostro_medium.jpg" alt="rostro"> -->
+        <img src="./imgs/rostro_small.jpg" alt="rostro"
+            srcset="./imgs/rostro_small.jpg 500w, ./imgs/rostro_medium.jpg 800w, ./imgs/rostro.jpg 1000w"
+            sizes="(max-width: 500px) 500px, (max-width: 800px) 800px, (max-width: 1000px) 1000px">
+    </div>
+</body>
+
+</html>
