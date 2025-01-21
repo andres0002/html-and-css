@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    /* ancho de las columnas. */
+    grid-template-columns: 60px 100px 200px;
+    /* alto de las filas. */
+    grid-template-rows: 80px 100px 200px;
+}
+
+.grid-item {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}

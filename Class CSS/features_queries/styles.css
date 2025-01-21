@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Si el navegador soporta. */
+@supports (display: grid) {
+    body {
+        display: grid;
+    }
+}
+/* Si el navegador no lo soporta. */
+@supports not (display: grid) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
