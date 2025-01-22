@@ -6,9 +6,13 @@ body {
 .grid {
     display: grid;
     /* ancho de las columnas. */
-    grid-template-columns: 60px 100px 200px;
+    /* grid-template-columns: 60px 100px 200px; */
+    /* el fr -> trata de repartir las celdas de forma equivalente iguales ya si un contenedor necesita un poco mas para que el contenido dentre de forma correcta se lo da y el resto lo reparte. */
+    /* el auto -> mira el min-content y el resto lo reparte entre los que se les allá dado auto. */
+    grid-template-columns: auto 1fr 1fr;
     /* alto de las filas. */
-    grid-template-rows: 80px 100px 200px;
+    /* grid-template-rows: 80px 100px 200px; */
+    grid-template-rows: auto 100px 200px;
 }
 
 .grid-item {
