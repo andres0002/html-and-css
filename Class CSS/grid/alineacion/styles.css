@@ -1,0 +1,52 @@
+body {
+    margin: 10;
+    font-family: sans-serif;
+    background-color: #999;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 10px;
+    /* Sirve para mover los grid-items en sus celdas de forma horizontal. */
+    justify-items: center;
+    /* Sirve para mover las celdas de forma horizontal. */
+    justify-content: center;
+    /* Sirve para mover los grid-items en sus celdas de forma vertical. */
+    align-items: center;
+    /* Sirve para mover las celdas de forma vertical. */
+    align-content: center;
+    height: 98vh;
+    border: 2px solid #000;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    font-size: 60px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
+
+
+.grid-item:first-child {
+    /* Sirve para mover el grid-item de forma horizontal en su propia celda. */
+    justify-self: center;
+    /* Sirve para mover el grid-item de forma vertical en su propia celda. */
+    align-self: center;
+    background-color: #f00;
+}
