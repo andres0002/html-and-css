@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    height: 200vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* .container {} */
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    /* animation-timeline: scroll(); */
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+        background-color: #f33;
+    }
+    to {
+        width: 100%;
+    }
+}

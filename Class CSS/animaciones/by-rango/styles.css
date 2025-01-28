@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    height: 200vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* .container {} */
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    height: 200px;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra;
+    animation-fill-mode: both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    /* animation-timeline: scroll(); */
+    /* cover -> Sirve para iniciar la animación cuando el elemento empiece a aparecer. */
+    animation-range-start: cover 30%;
+    animation-range-end: cover 70%;
+    /* contain -> Sirve para iniciar la animación una ves el elemento se visualice completamente.  */
+    /* animation-range-start: contain 0%;
+    animation-range-end: contain 80%; */
+    /* exit-crossing -> Sirve para iniciar la animación recien cuanto esta desapareciendo en la parte superior. */
+    /* animation-range-start: exit-crossing 0%;
+    animation-range-end: exit-crossing 100%; */
+}
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+        background-color: #f33;
+    }
+    to {
+        width: 100%;
+    }
+}
