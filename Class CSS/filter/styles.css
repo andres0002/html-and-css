@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.box {
+    background-color: #10232f;
+    margin: auto;
+    padding: 20px 50px;
+}

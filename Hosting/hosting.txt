@@ -1,0 +1,22 @@
+Tipos de Hosting:
+
+1 .Hosting compartido -> Un solo servidor contiene varios sitios WEB.
+2. VPS -> Servidor privado virtual.
+3. Hosting dedicado -> Servidor completo para un solo cliente.
+4. Cloud hosting -> Distribuir todo tu trafico en una red de servidores.
+5. Hosting especializado -> Un hosting especializado para casos puntuales.
+
+Que se debe buscar en un proveedor de hosting:
+
+1. Soporte 24/7, que se encargue de solucionar todos nuestros problemas a nivel del server proporcionado.
+2. Alto rendimiento.
+3. Confiabilidad, disponibilidad y almacenamiento en estados solido.
+4. Diversidad de planes y flexibilidad.
+5. Posibilidad backups (automaticos), copias de seguridad.
+6. Facil de usar -> que no se requiera demasiado conocimiento tecnico o por lo menos que se puedea hacer todo lo que se deba hacer pero de forma facil.
+
+Proveedores de hosting:
+
+1. Hostinger.
+ - Link oferta -> https://www.hostinger.co/?session=10244f451dbfe880356529761dc00e
+ - Link oferta -> https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblNnSHRGbFFrY3lJcE5zQXM1d0U3cS1Pa1BzZ3xBQ3Jtc0tuQXhmdlk1VXgxYk9LV0JWZ0F3TElVVzREdThudGVtR2NrT1I3VmJUNmFZaThvazNjSk81MkxpNjlTdjZGNUx1RGQtaGtHUFNfb1RMNjJhRkY4Z1dMeWFJUHlITFZMM0tNbGtqMUNhbmJFaEtOMlVPOA&q=https%3A%2F%2Fwww.hostg.xyz%2FSH6cZ&v=ELSm-G201Ls
