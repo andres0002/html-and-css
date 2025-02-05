@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Initial letter. */
+
+.box {
+    font-size: 20px;
+    padding: 0 40px;
+    border: 6px solid #000;
+    height: 95dvh;
+}
+
+p::first-letter {
+    /* initial-letter: 2 2; -> Sirve para indicar cuantas lineas quiere que ocupe la letra, el primer valor sirve para indicar cuantas lineas va ocupar de abajo a arriba y el segundo valor es para indicar desde que linea se quiere iniciar. */
+    initial-letter: 4 4;
+    padding: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
+    color: #f44;
+}

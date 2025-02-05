@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #48e;
+}
+
+/* Funciones de transformación sirven para transformar el elemento. */
+
+.box {
+    margin: auto;
+    padding: 20px 50px;
+    border: 4px solid #000;
+    width: fit-content;
+    /* transform: skew(20deg); -> Sirve para inclinar el elemento por grados. */
+    /* transform: skew(deg); */
+    /* transform: scale(2); -> Sirve para escalar el elemento. */
+    /* transform: scale(2); */
+    /* transform: rotate(20deg); Sirve para rotar el elemento. */
+    /* transform: rotate(20deg); */
+    /* transform: translate(20px); -> Sirve para desplazar el elemento. */
+    transform: translate(20px, 20px);
+}
+
+/* .img {
+} */

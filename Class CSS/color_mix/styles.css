@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Color mix. */
+
+.box {
+    font-size: 20px;
+    padding: 300px;
+    border: 6px solid #000;
+    width: fit-content;
+    margin: auto;
+    /* background-color: #48e; */
+    /* background-color: color-mix(in srgb, #f44 30%, #48e 30%); -> Sirve para combinar colores. */
+    background-color: color-mix(in srgb, #f44 30%, #48e 30%);
+}

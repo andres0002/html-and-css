@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #48e;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* calc -> Sirve para hacer calculos. */
+
+.box {
+    margin: 50px auto;
+    font-size: 20px;
+    padding: 0 40px;
+    width: clamp(300px, 100%, 600px);
+    border: 6px solid #000;
+    font-size: clamp(2rem, 2.2vw, 4rem);
+    width: calc(50% + 50%);
+}

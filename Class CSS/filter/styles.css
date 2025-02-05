@@ -5,8 +5,38 @@ body {
     display: flex;
 }
 
+/* Las funciones de filtro son funciones que usamos en la propiedad de filter que aplican efectos especiales, como sombras, desenfoque, aumentar el contraste y entre otras cosas mas. */
+
 .box {
-    background-color: #10232f;
+    background-color: #48e;
     margin: auto;
     padding: 20px 50px;
+    /* filter: drop-shadow(0 0 15px #000); */
+}
+
+/* Filter sirve para darle filtro a el propio elemento y sus respetivos hijos. */
+/* Backdrop-Filter sirve para darle filtro a los elementos que estan por debajo. */
+
+img {
+    /* filter: drop-shadow(0 0 15px #000); -> Sirve para agregar una sombra al elemento. */
+    /* filter: drop-shadow(0 0 15px #000); */
+    /* filter: blur(15px); -> Sirve para desenfocar el elemento. */
+    /* filter: blur(10px); */
+    /* filter: brightness(0.5); -> Sirve para definir el brillo del elemento. */
+    /* filter: brightness(10); */
+    /* filter: contrast(0); -> Sirve para definir el contraste del elemento. */
+    /* filter: contrast(0); */
+    /* filter: grayscale(1); -> Sirve para convertir el elemento en una escala de grises. */
+    /* filter: grayscale(0); */
+    /* filter: saturate(0); -> Sirve para convertir el elemento en una escala de grises, y para aumentar la intencidad de los colores. */
+    /* filter: saturate(1); */
+    /* filter: hue-rotate(100deg); -> Sirve para rotar en la escala de colores por grados. */
+    /* filter: hue-rotate(100deg); */
+    /* backdrop-filter: blur(10px); -> Sirve para dar efecto a los elementos que estan por debajo. */
+    /* filter: opacity(.6); -> Sirve para dar un efecto de transparencia. */
+    /* filter: opacity(1); */
+    /* filter: invert(.9); -> Sirve para invertir el espectro de colores, el contrario del hue-rotate. */
+    /* filter: invert(); */
+    /* filter: sepia(); -> Sirve para poner colores sepia. */
+    filter: sepia(0);
 }

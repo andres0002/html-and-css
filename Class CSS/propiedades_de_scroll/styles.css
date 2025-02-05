@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #48e;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Propiedades de scroll. */
+
+.box {
+    margin: auto;
+    font-size: 20px;
+    padding: 0 40px;
+    width: 50vw;
+    height: 90vh;
+    border: 6px solid #000;
+    overflow: scroll;
+    /* scroll-behavior: smooth; -> Sirve para establecer la suabidad del scroll en la nevegación entre enlaces en la misma pagina. */
+    scroll-behavior: smooth;
+    /* scrollbar-color: #000 #48e; Sirve para darle color a la barra del scroll y el fondo del scroll el primer color es el de la barra y el segundo el del fondo de la barra. */
+    scrollbar-color: #48e transparent;
+    /* scrollbar-width: thin; -> Sirve para poner el scroll mas finito o mas pequeño. */
+    /* scrollbar-width: auto; -> Es el que define el navegador por defecto. */
+    /* scrollbar-width: none; -> Sirve para hacer scroll pero no se ve la barra del scroll. */
+    scrollbar-width: thin;
+}

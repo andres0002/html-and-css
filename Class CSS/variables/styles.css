@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Variables -> Se definen con dos guiones (--) al inicio de la variable, son acesibles dependiendo en el contexto en el que se agrege, por ejemplo si se agrega en el .box sera asesible para el mismo elemento y los que tiene en su interior. */
+
+.box {
+    --color-principal: #48e;
+    /* background-color: #48e; */
+    /* background-color: var(--color-principal); */
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: 30px;
+    padding: 0 40px;
+    width: clamp(200px, 100%, 300px);
+    border: 6px solid #000;
+}
+
+.box:first-child {
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+h1 {
+    font-size: 2.4em;
+    margin-bottom: 0;
+}

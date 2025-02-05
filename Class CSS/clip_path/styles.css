@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+/* Clip path -> Sirve para recortar. */
+
+img {
+    max-width: 100%;
+    /* clip-path: circle(30% at 100px 100px); */
+    clip-path: ellipse(30% 50% at 50% 50%);
+}
