@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body, div, ul, li, a, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    --bg-color: #ffb18c;
+    --text-color: #333;
+    --dark-color: rgb(255, 130, 77);
+    --faq-color: #fff;
+    background-color: var(--bg-color);
+}
+
+/* Con details and summary */
+
+.faq {
+    margin: auto;
+}
+
+details {
+    background-color: var(--faq-color);
+    margin: 7px;
+    padding: 7px;
+    max-height: 34px;
+    transition: max-height 2s;
+    overflow: hidden;
+}
+
+details[open] {
+    max-height: 400px;
+}
+
+details[open] .content {
+    animation: aparecer-texto 1s .3s both;
+}
+
+details b {
+    background-color: var(--dark-color);
+    padding: 2px 4px;
+    color: #fff;
+    margin-right: 4px;
+}
+
+/* details:nth-child(2) b {
+    background-color: #48e;
+}
+
+details:nth-child(3) b {
+    background-color: #4a6;
+} */
+
+summary {
+    user-select: none;
+    position: relative;
+}
+
+summary::marker {
+    content: "";
+}
+
+summary::before {
+    content: "+";
+    color: var(--bg-color);
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+details[open] summary::before {
+    content: "-";
+    right: 5px;
+}
+
+.content {
+    padding: 5px 10px;
+    margin: 10px;
+    margin-bottom: 0;
+    border-top: 3px solid var(--bg-color);
+    font-size: .8rem;
+    color: var(--text-color);
+}
+
+@keyframes aparecer-texto {
+    from {
+        opacity: 0;
+        translate: 0 -20px;
+        border-top: 3px solid transparent;
+    }
+    50% {
+        border-top: 3px solid transparent;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .faq {
+        max-width: clamp(300px, 100%, 700px);
+        margin: 50px auto;
+    }
+}
